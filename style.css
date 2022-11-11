@@ -1,3 +1,8 @@
+:root{
+    --fz-header-text: 20px;
+    --p-header-nav:20px;
+}
+
 a{
     list-style: none;
     text-decoration: none;
@@ -11,7 +16,7 @@ header{
     height: 80px;
 }
 header div{
-    font-size: 20px;
+    font-size: var(--fz-header-text);
     font-weight: 600;
 }
 header div span{
@@ -20,7 +25,7 @@ header div span{
 }
 header div ul li{
     display: inline;
-    padding: 20px;
+    padding: var(--p-header-nav);
 }
 .products{
     display: grid;
@@ -105,5 +110,32 @@ header div ul li{
     align-items: center;
     margin-top: 10px;
 
+}
+
+
+
+/*smart phone*/
+@media only screen  and (max-width: 46.1875em) {
+
+    :root{
+        --fz-header-text: 20px;
+    }
+    .nav{
+        display: none;
+    }
+    .products{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+}
+/*tablet*/
+@media only screen  and (min-width: 46.25em) and (max-width: 63.9375em) {
+    :root{
+        --fz-header-text: 15px;
+        --p-header-nav: 15px;
+    }
+     .products{
+        grid-template-columns: repeat(2,1fr);
+    }
 }
 
