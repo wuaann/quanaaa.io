@@ -1,6 +1,9 @@
 :root{
     --fz-header-text: 20px;
     --p-header-nav:20px;
+
+
+    --h-top-img:350px
 }
 
 a{
@@ -39,7 +42,7 @@ header div ul li{
 
 .top{
     position: relative;
-    height: 350px;
+    height: var(--h-top-img);
     overflow: hidden;
 
 }
@@ -119,13 +122,16 @@ header div ul li{
 
     :root{
         --fz-header-text: 20px;
+        --h-top-img: 700x;
     }
     .nav{
         display: none;
     }
     .products{
         grid-template-columns: repeat(1,1fr);
+
     }
+
 
 }
 /*tablet*/
@@ -133,6 +139,7 @@ header div ul li{
     :root{
         --fz-header-text: 15px;
         --p-header-nav: 15px;
+        --h-top-img: 500px;
     }
      .products{
         grid-template-columns: repeat(2,1fr);
