@@ -103,6 +103,9 @@ header div ul li{
     justify-content: center;
     align-items: center;
 }
+.buttons div:hover{
+    background-color: red;
+}
 .stars i{
     color: #DAA520;
 }
